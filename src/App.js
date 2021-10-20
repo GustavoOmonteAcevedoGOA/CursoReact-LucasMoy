@@ -50,8 +50,8 @@ function App() {
       <br/>
 
       <div className="meme">
-        <span>{linea1}</span><br />
-        <span>{linea2}</span> <br />
+        <span>{linea1}</span>
+        <span>{linea2}</span>
         <img src={"/Imagenes/" + imagen + ".jpg"} alt="" />
       </div>
     </div>
