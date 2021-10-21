@@ -27,7 +27,12 @@ function App() {
     
   const onClickExportar = function (evento){
     html2canvas(document.querySelector("#meme")).then(canvas => {
-      document.body.appendChild(canvas)
+      
+      var img    = canvas.toDataURL("image/png");      
+      var link = document.createElement('a');
+      link.download = 'meme.png';
+      link.href = img;
+      link.click();
   });
   
   
