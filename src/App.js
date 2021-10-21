@@ -28,9 +28,10 @@ function App() {
   const onClickExportar = function (evento){
     html2canvas(document.querySelector("#meme")).then(canvas => {
       
-      var img    = canvas.toDataURL("image/png");      
+      var img = canvas.toDataURL("image/png");
       var link = document.createElement('a');
       link.download = 'meme.png';
+      /* el link lo convierte a datos de la imagen */
       link.href = img;
       link.click();
   });
